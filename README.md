@@ -1,4 +1,4 @@
-# preSN_combined_SK_KL_consistency
+# Combined Super-Kamiokande and KamLAND pre-supernova alarm - check consistency
 For any questions, please contact: contact_combinedsystem@lowbg.org
 
 check_consistency.sh:
@@ -13,3 +13,6 @@ If your access method is the IP address authentication:
 
 If your access method is User name and password authentication:
 ./check_consistency.sh your_username your_password
+
+
+https://www.lowbg.org/presnalarm/
