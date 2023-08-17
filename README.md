@@ -14,5 +14,7 @@ If your access method is the IP address authentication:
 If your access method is User name and password authentication:
 ./check_consistency.sh your_username your_password
 
+The consistency check script automatically downloads results from both Super-Kamiokande and KamLAND servers and produces a single file named "preSN_combinedSKKL.txt"
+The script will verify the consistency and currency of the results and will yield the same status codes as the combined alert system.
 
 https://www.lowbg.org/presnalarm/
