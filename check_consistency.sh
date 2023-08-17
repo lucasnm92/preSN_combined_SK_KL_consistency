@@ -35,13 +35,13 @@ if [[ "$FPR1" == "$FPR2" && "$status1" == "$status2" ]]; then
         fi                  
     fi
 
-elif [[ "$status1" == "2" || $(( $(date +%s) - time2 )) -gt 900 ]]; then
+elif [[ "$status1" == "3" || $(( $(date +%s) - time2 )) -gt 900 ]]; then
     echo "Results are from Super-Kamiokande only (KamLAND offline)."
     rm -f $file_kl
     mv $file_sk preSN_combinedSKKL.txt
     exit 2
 
-elif [[ "$status2" == "3" || $(( $(date +%s) - time1 )) -gt 900 ]]; then
+elif [[ "$status2" == "2" || $(( $(date +%s) - time1 )) -gt 900 ]]; then
     echo "Results are from KamLAND only (Super-Kamiokande offline)."
     rm -f $file_sk
     mv $file_kl preSN_combinedSKKL.txt
